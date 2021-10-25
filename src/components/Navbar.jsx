@@ -1,16 +1,8 @@
 import { Menu } from '@mui/icons-material';
-import {
-  AppBar,
-  Avatar,
-  Box,
-  Button,
-  IconButton,
-  Toolbar,
-  Typography
-} from '@mui/material';
+import { AppBar, Box, IconButton, Toolbar, Typography } from '@mui/material';
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({ handleClick, isOpen }) => {
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -27,15 +19,18 @@ const Navbar = () => {
                 <strong>Yabetsu</strong>
               </Typography>
             </Box>
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              sx={{ mr: 2 }}
-            >
-              <Menu />
-            </IconButton>
+            {!isOpen && (
+              <IconButton
+                size="large"
+                edge="start"
+                color="inherit"
+                aria-label="menu"
+                sx={{ mr: 2 }}
+                onClick={(e) => handleClick(e)}
+              >
+                <Menu />
+              </IconButton>
+            )}
           </Toolbar>
         </AppBar>
       </Box>
