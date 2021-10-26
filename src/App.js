@@ -4,6 +4,7 @@ import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import { styled } from '@mui/material/styles';
+import About from './components/About/About';
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
@@ -69,7 +70,7 @@ function App() {
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
-        <Box sx={{ display: 'flex' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
           <Navbar
             open={open}
             handleDrawerOpen={handleDrawerOpen}
@@ -81,6 +82,7 @@ function App() {
             handleDrawerClose={handleDrawerClose}
             DrawerHeader={DrawerHeader}
           />
+          <About />
         </Box>
       </ThemeProvider>
     </ColorModeContext.Provider>
