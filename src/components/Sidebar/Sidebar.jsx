@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid, IconButton, Slide, Stack } from '@mui/material';
+import { Box, easing, Grid, IconButton, Slide, Stack } from '@mui/material';
 import SidebarLink from './SidebarLink';
 import {
   Close,
@@ -13,7 +13,16 @@ import {
 const Sidebar = ({ handleClick, isOpen }) => {
   return (
     <>
-      <Slide direction="left" in={isOpen}>
+      <Slide
+        direction="left"
+        in={isOpen}
+        easing={{ enter: easing.easeInOut, exit: easing.easeInOut }}
+        timeout={{
+          appear: 800,
+          enter: 500,
+          exit: 800
+        }}
+      >
         <Grid container justifyContent="flex-end">
           <Box
             sx={{
