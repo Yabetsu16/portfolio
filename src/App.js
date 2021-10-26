@@ -1,8 +1,9 @@
 import { Box, createTheme, ThemeProvider } from '@mui/material';
-import { orange } from '@mui/material/colors';
 import React, { useState } from 'react';
+import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
+import { styled } from '@mui/material/styles';
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
@@ -33,6 +34,28 @@ function App() {
       }),
     [mode]
   );
+
+  theme.typography.h1 = {
+    '@media (min-width:600px)': {
+      fontSize: '3rem'
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: '5rem'
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '7rem'
+    }
+  };
+
+  const DrawerHeader = styled('div')(({ theme }) => ({
+    display: 'flex',
+    alignItems: 'center',
+    padding: theme.spacing(0, 1),
+    // necessary for content to be below app bar
+    ...theme.mixins.toolbar,
+    justifyContent: 'flex-start'
+  }));
+
   const [open, setOpen] = useState(false);
 
   const handleDrawerOpen = () => {
@@ -52,7 +75,12 @@ function App() {
             handleDrawerOpen={handleDrawerOpen}
             ColorModeContext={ColorModeContext}
           />
-          <Sidebar open={open} handleDrawerClose={handleDrawerClose} />
+          <Home open={open} DrawerHeader={DrawerHeader} />
+          <Sidebar
+            open={open}
+            handleDrawerClose={handleDrawerClose}
+            DrawerHeader={DrawerHeader}
+          />
         </Box>
       </ThemeProvider>
     </ColorModeContext.Provider>
