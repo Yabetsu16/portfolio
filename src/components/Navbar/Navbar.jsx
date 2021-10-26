@@ -1,39 +1,58 @@
 import { Menu } from '@mui/icons-material';
-import { AppBar, Box, IconButton, Toolbar, Typography } from '@mui/material';
+import { IconButton, Toolbar, Typography } from '@mui/material';
+import MuiAppBar from '@mui/material/AppBar';
 import React from 'react';
+import { styled } from '@mui/material/styles';
 
-const Navbar = ({ handleClick, isOpen }) => {
+const drawerWidth = 240;
+
+const AppBar = styled(MuiAppBar, {
+  shouldForwardProp: (prop) => prop !== 'open'
+  // @ts-ignore
+})(({ theme, open }) => ({
+  transition: theme.transitions.create(['margin', 'width'], {
+    easing: theme.transitions.easing.sharp,
+    duration: theme.transitions.duration.leavingScreen
+  }),
+  ...(open && {
+    width: `calc(100% - ${drawerWidth}px)`,
+    transition: theme.transitions.create(['margin', 'width'], {
+      easing: theme.transitions.easing.easeOut,
+      duration: theme.transitions.duration.enteringScreen
+    }),
+    marginRight: drawerWidth
+  })
+}));
+
+const Navbar = ({ open, handleDrawerOpen }) => {
   return (
     <>
-      <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static" sx={{ backgroundColor: 'black' }}>
-          <Toolbar sx={{ justifyContent: 'space-between' }}>
-            <Box display="flex" alignItems="center">
-              <img
-                src="https://i.postimg.cc/qq13CgJd/Yabetsu-White.png"
-                alt="Yabetsu"
-                height="64px"
-                width="64px"
-              />
-              <Typography variant="h4">
-                <strong>Yabetsu</strong>
-              </Typography>
-            </Box>
-            {!isOpen && (
-              <IconButton
-                size="large"
-                edge="start"
-                color="inherit"
-                aria-label="menu"
-                sx={{ mr: 2 }}
-                onClick={(e) => handleClick(e)}
-              >
-                <Menu />
-              </IconButton>
-            )}
-          </Toolbar>
-        </AppBar>
-      </Box>
+      <AppBar
+        position="fixed"
+        // @ts-ignore
+        open={open}
+      >
+        <Toolbar>
+          <img
+            src="https://i.postimg.cc/qq13CgJd/Yabetsu-White.png"
+            alt="Yabetsu"
+            height="64px"
+            width="64px"
+          />
+          <Typography variant="h4" noWrap sx={{ flexGrow: 1 }} component="div">
+            Yabetsu
+          </Typography>
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            edge="end"
+            onClick={handleDrawerOpen}
+            sx={{ ...(open && { display: 'none' }) }}
+          >
+            <Menu />
+          </IconButton>
+        </Toolbar>
+      </AppBar>
     </>
   );
 };

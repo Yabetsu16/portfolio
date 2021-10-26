@@ -1,20 +1,40 @@
+import { Box, createTheme, ThemeProvider } from '@mui/material';
+import { orange } from '@mui/material/colors';
 import React, { useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
+  const theme = createTheme({
+    // @ts-ignore
+    palette: {
+      // @ts-ignore
+      mode: 'dark',
+      primary: {
+        main: '#0d47a1'
+      },
+      secondary: {
+        main: '#1a237e'
+      }
+    }
+  });
+  const [open, setOpen] = useState(false);
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    setIsOpen(!isOpen);
+  const handleDrawerOpen = () => {
+    setOpen(true);
+  };
+
+  const handleDrawerClose = () => {
+    setOpen(false);
   };
 
   return (
-    <>
-      <Navbar handleClick={handleClick} isOpen={isOpen} />
-      <Sidebar handleClick={handleClick} isOpen={isOpen} />
-    </>
+    <ThemeProvider theme={theme}>
+      <Box sx={{ display: 'flex' }}>
+        <Navbar open={open} handleDrawerOpen={handleDrawerOpen} />
+        <Sidebar open={open} handleDrawerClose={handleDrawerClose} />
+      </Box>
+    </ThemeProvider>
   );
 }
 

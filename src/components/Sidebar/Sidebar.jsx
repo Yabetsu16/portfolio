@@ -1,80 +1,60 @@
 import React from 'react';
-import { Box, easing, Grid, IconButton, Slide, Stack } from '@mui/material';
+import { Divider, Drawer, IconButton, List } from '@mui/material';
 import SidebarLink from './SidebarLink';
 import {
-  Close,
+  ChevronLeft,
+  ChevronRight,
   ContactMail,
   Description,
   Home,
   Info,
   Web
 } from '@mui/icons-material';
+import { styled, useTheme } from '@mui/material/styles';
 
-const Sidebar = ({ handleClick, isOpen }) => {
+const drawerWidth = 240;
+
+const DrawerHeader = styled('div')(({ theme }) => ({
+  display: 'flex',
+  alignItems: 'center',
+  padding: theme.spacing(0, 1),
+  // necessary for content to be below app bar
+  ...theme.mixins.toolbar,
+  justifyContent: 'flex-start'
+}));
+
+const Sidebar = ({ open, handleDrawerClose }) => {
+  const theme = useTheme();
+
   return (
     <>
-      <Slide
-        direction="left"
-        in={isOpen}
-        easing={{ enter: easing.easeInOut, exit: easing.easeInOut }}
-        timeout={{
-          appear: 800,
-          enter: 500,
-          exit: 800
+      <Drawer
+        sx={{
+          width: drawerWidth,
+          flexShrink: 0,
+          '& .MuiDrawer-paper': {
+            width: drawerWidth
+          }
         }}
+        variant="persistent"
+        anchor="right"
+        // @ts-ignore
+        open={open}
       >
-        <Grid container justifyContent="flex-end">
-          <Box
-            sx={{
-              display: 'flex',
-              backgroundColor: 'black',
-              width: '500px',
-              height: '700px'
-            }}
-            justifyContent="center"
-            alignItems="center"
-          >
-            <Stack spacing={5}>
-              <SidebarLink
-                linkName="HOME"
-                icon={<Home sx={{ fontSize: '40px', marginRight: '5px' }} />}
-              />
-              <SidebarLink
-                linkName="ABOUT"
-                icon={<Info sx={{ fontSize: '40px', marginRight: '5px' }} />}
-              />
-              <SidebarLink
-                linkName="PROJECTS"
-                icon={<Web sx={{ fontSize: '40px', marginRight: '5px' }} />}
-              />
-              <SidebarLink
-                linkName="RESUME"
-                icon={
-                  <Description sx={{ fontSize: '40px', marginRight: '5px' }} />
-                }
-              />
-              <SidebarLink
-                linkName="CONTACT"
-                icon={
-                  <ContactMail sx={{ fontSize: '40px', marginRight: '5px' }} />
-                }
-              />
-            </Stack>
-            <IconButton
-              aria-label="close"
-              sx={{
-                border: '0.5px white solid',
-                color: 'white',
-                fontSize: '40px',
-                marginLeft: '50px'
-              }}
-              onClick={(e) => handleClick(e)}
-            >
-              <Close />
-            </IconButton>
-          </Box>
-        </Grid>
-      </Slide>
+        <DrawerHeader>
+          <IconButton onClick={handleDrawerClose}>
+            {theme.direction === 'rtl' ? <ChevronLeft /> : <ChevronRight />}
+          </IconButton>
+        </DrawerHeader>
+        <Divider />
+        <List>
+          <SidebarLink linkName="HOME" icon={<Home />} />
+          <SidebarLink linkName="ABOUT" icon={<Info />} />
+          <SidebarLink linkName="PROJECTS" icon={<Web />} />
+          <SidebarLink linkName="RESUME" icon={<Description />} />
+          <SidebarLink linkName="CONTACT" icon={<ContactMail />} />
+        </List>
+      </Drawer>
     </>
   );
 };
