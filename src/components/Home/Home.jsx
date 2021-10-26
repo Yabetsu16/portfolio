@@ -41,7 +41,7 @@ const Home = ({ open, DrawerHeader }) => {
           direction="column"
           justifyContent="center"
           alignItems="center"
-          sx={{ height: '100vh' }}
+          sx={{ height: '75vh' }}
         >
           <Grid item>
             <Stack spacing={3} textAlign="center">
