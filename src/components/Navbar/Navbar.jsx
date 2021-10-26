@@ -1,8 +1,8 @@
-import { Menu } from '@mui/icons-material';
+import { Brightness4, Brightness7, Menu } from '@mui/icons-material';
 import { IconButton, Toolbar, Typography } from '@mui/material';
 import MuiAppBar from '@mui/material/AppBar';
 import React from 'react';
-import { styled } from '@mui/material/styles';
+import { styled, useTheme } from '@mui/material/styles';
 
 const drawerWidth = 240;
 
@@ -24,7 +24,9 @@ const AppBar = styled(MuiAppBar, {
   })
 }));
 
-const Navbar = ({ open, handleDrawerOpen }) => {
+const Navbar = ({ open, handleDrawerOpen, ColorModeContext }) => {
+  const theme = useTheme();
+  const colorMode = React.useContext(ColorModeContext);
   return (
     <>
       <AppBar
@@ -42,6 +44,13 @@ const Navbar = ({ open, handleDrawerOpen }) => {
           <Typography variant="h4" noWrap sx={{ flexGrow: 1 }} component="div">
             Yabetsu
           </Typography>
+          <IconButton
+            sx={{ ml: 1 }}
+            onClick={colorMode.toggleColorMode}
+            color="inherit"
+          >
+            {theme.palette.mode === 'dark' ? <Brightness7 /> : <Brightness4 />}
+          </IconButton>
           <IconButton
             color="inherit"
             aria-label="open drawer"
