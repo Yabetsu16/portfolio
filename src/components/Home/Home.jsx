@@ -41,7 +41,7 @@ const Home = ({ open, DrawerHeader }) => {
           direction="column"
           justifyContent="center"
           alignItems="center"
-          sx={{ height: '75vh' }}
+          sx={{ height: '100vh', width: '100vw' }}
         >
           <Grid item>
             <Stack spacing={3} textAlign="center">
@@ -62,20 +62,23 @@ const Home = ({ open, DrawerHeader }) => {
               </Typography>
             </Stack>
           </Grid>
-        </Grid>
-        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-          <Stack>
+          <Grid item>
             <IconButton
               aria-label="delete"
               sx={{
                 mb: '10px'
               }}
+              href="#about"
             >
               <KeyboardArrowDown />
             </IconButton>
-            <Typography paragraph>Scroll Down</Typography>
-          </Stack>
-        </Box>
+          </Grid>
+          <Grid item>
+            <Typography paragraph align="center">
+              Scroll Down
+            </Typography>
+          </Grid>
+        </Grid>
       </Main>
     </>
   );
