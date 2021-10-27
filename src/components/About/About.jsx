@@ -1,7 +1,8 @@
-import { Box, Typography, Tabs, Tab } from '@mui/material';
+import { Box, Tabs, Tab, Typography } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 import React from 'react';
 import AboutPanel from './AboutPanel';
-import ProfilePanel from './ProfilePanel';
+import ProfilePanel from './Profile/ProfilePanel';
 
 function a11yProps(index) {
   return {
@@ -11,6 +12,7 @@ function a11yProps(index) {
 }
 
 const About = () => {
+  const theme = useTheme();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -18,8 +20,30 @@ const About = () => {
   };
   return (
     <>
-      <div id="about" style={{ margin: '60px' }}></div>
-      <Box sx={{ width: '100%' }}>
+      <div
+        id="about"
+        style={{
+          padding: '60px',
+          backgroundColor: theme.palette.mode === 'dark' ? 'black' : 'white'
+        }}
+      >
+        <Typography
+          sx={{
+            color: theme.palette.mode === 'dark' ? 'white' : 'black'
+          }}
+          variant="h3"
+          align="center"
+        >
+          ABOUT
+        </Typography>
+      </div>
+      <Box
+        sx={{
+          width: '100%',
+          color: theme.palette.mode === 'dark' ? 'white' : 'black',
+          bgcolor: theme.palette.mode === 'dark' ? 'black' : 'white'
+        }}
+      >
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
           <Tabs
             value={value}
