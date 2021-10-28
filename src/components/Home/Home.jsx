@@ -91,7 +91,11 @@ const Home = ({ open, DrawerHeader }) => {
               Web Developer
             </Typography>
           </Grid>
+<<<<<<< HEAD
           <Grid item xs={12} textAlign="center">
+=======
+          {/* <Grid item xs={4}>
+>>>>>>> 267db42e86263e221f9112341876caca4ec1a9d8
             <IconButton
               aria-label="about"
               sx={{
@@ -101,10 +105,15 @@ const Home = ({ open, DrawerHeader }) => {
             >
               <KeyboardArrowDown />
             </IconButton>
+<<<<<<< HEAD
+=======
+          </Grid>
+          <Grid item xs={6}>
+>>>>>>> 267db42e86263e221f9112341876caca4ec1a9d8
             <Typography paragraph align="center">
               Scroll Down
             </Typography>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Main>
     </>
