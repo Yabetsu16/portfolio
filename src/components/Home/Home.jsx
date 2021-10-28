@@ -41,30 +41,59 @@ const Home = ({ open, DrawerHeader }) => {
           direction="column"
           justifyContent="center"
           alignItems="center"
-          sx={{ height: '100vh', width: '100vw' }}
+          sx={{
+            height: '100vh',
+            width: '100vw',
+            '@media screen and (max-width: 1280px)': {
+              width: '95vw'
+            },
+            '@media screen and (max-width: 768px)': {
+              width: '90vw'
+            },
+            '@media screen and (max-width: 280px)': {
+              width: '80vw'
+            }
+          }}
         >
-          <Grid item>
-            <Stack spacing={3} textAlign="center">
-              <Typography variant="h1" sx={{ fontWeight: '500' }}>
-                Hi!
-              </Typography>
-              <Typography variant="h1" sx={{ fontWeight: '500' }}>
-                I'm a{' '}
-                <span
-                  style={{
-                    color: '#1CC5FF',
-                    // @ts-ignore
-                    fontWeight: '800'
-                  }}
-                >
-                  Web Developer
-                </span>
-              </Typography>
-            </Stack>
+          <Grid item xs={12} textAlign="center">
+            <Typography
+              variant="h1"
+              sx={{ display: { xs: 'none', sm: 'block' }, fontWeight: '500' }}
+            >
+              Hi!
+            </Typography>
+            <Typography
+              variant="h1"
+              sx={{ display: { xs: 'none', sm: 'block' }, fontWeight: '500' }}
+            >
+              I'm a{' '}
+              <span
+                style={{
+                  color: '#1CC5FF',
+                  // @ts-ignore
+                  fontWeight: '800'
+                }}
+              >
+                Web Developer
+              </span>
+            </Typography>
+            <Typography
+              variant="h1"
+              sx={{ display: { xs: 'block', sm: 'none' }, fontWeight: '500' }}
+            >
+              Hi! I'm a
+            </Typography>
+            <Typography
+              variant="h1"
+              sx={{ display: { xs: 'block', sm: 'none' }, fontWeight: '500' }}
+              color="#1CC5FF"
+            >
+              Web Developer
+            </Typography>
           </Grid>
-          <Grid item>
+          {/* <Grid item xs={4}>
             <IconButton
-              aria-label="delete"
+              aria-label="about"
               sx={{
                 mb: '10px'
               }}
@@ -73,11 +102,11 @@ const Home = ({ open, DrawerHeader }) => {
               <KeyboardArrowDown />
             </IconButton>
           </Grid>
-          <Grid item>
+          <Grid item xs={6}>
             <Typography paragraph align="center">
               Scroll Down
             </Typography>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Main>
     </>
