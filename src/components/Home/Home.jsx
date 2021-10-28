@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
-import { Grid, IconButton, Stack, Typography } from '@mui/material';
+import { Grid, IconButton, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { KeyboardArrowDown } from '@mui/icons-material';
 const drawerWidth = 240;

@@ -48,7 +48,8 @@ const About = () => {
           <Tabs
             value={value}
             onChange={handleChange}
-            aria-label="basic tabs example"
+            aria-label="about tabs"
+            centered
           >
             <Tab label="Profile" {...a11yProps(0)} />
             <Tab label="Achievements" {...a11yProps(1)} />
