@@ -5,7 +5,7 @@ import { useTheme } from '@mui/material/styles';
 import { KeyboardArrowDown } from '@mui/icons-material';
 const drawerWidth = 240;
 
-const Home = ({ open, DrawerHeader }) => {
+const Home = ({ open, DrawerHeader, mode }) => {
   const theme = useTheme();
   const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
     // @ts-ignore
@@ -69,7 +69,7 @@ const Home = ({ open, DrawerHeader }) => {
               I'm a{' '}
               <span
                 style={{
-                  color: '#1CC5FF',
+                  color: theme.palette.mode === 'dark' ? '#03a9f4' : '#0d47a1',
                   // @ts-ignore
                   fontWeight: '800'
                 }}
