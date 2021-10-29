@@ -2,6 +2,7 @@ import { Box, Tabs, Tab, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import React from 'react';
 import AboutPanel from './AboutPanel';
+import AchievementsPanel from './Achievements/AchievementsPanel';
 import ProfilePanel from './Profile/ProfilePanel';
 
 function a11yProps(index) {
@@ -60,7 +61,7 @@ const About = () => {
           <ProfilePanel />
         </AboutPanel>
         <AboutPanel value={value} index={1}>
-          Item Two
+          <AchievementsPanel />
         </AboutPanel>
         <AboutPanel value={value} index={2}>
           Item Three
