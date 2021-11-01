@@ -8,13 +8,7 @@ import amaDean from './ama_dean.jpg';
 
 const AchievementsPanel = () => {
   return (
-    <Grid
-      container
-      justifyContent="space-between"
-      alignItems="center"
-      sx={{ height: '100vh' }}
-      direction="row"
-    >
+    <Grid container justifyContent="space-around" direction="row" spacing={3}>
       <AchievementItem
         label={'Unity'}
         letter={'U'}

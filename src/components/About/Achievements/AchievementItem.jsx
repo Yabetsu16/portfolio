@@ -24,7 +24,16 @@ const AchievementItem = ({
 }) => {
   const theme = useTheme();
   return (
-    <Grid item lg={3} sx={{ display: 'flex' }} justifyContent="center">
+    <Grid
+      item
+      sm={6}
+      md={6}
+      lg={4}
+      xl={3}
+      sx={{ display: 'flex' }}
+      justifyContent="center"
+      alignItems="center"
+    >
       <Card sx={{ maxWidth: 345 }}>
         <CardHeader
           avatar={
