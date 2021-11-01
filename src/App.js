@@ -5,7 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import { styled } from '@mui/material/styles';
 import About from './components/About/About';
-import { amber, grey, deepOrange, lightBlue } from '@mui/material/colors';
+import { grey, lightBlue } from '@mui/material/colors';
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 

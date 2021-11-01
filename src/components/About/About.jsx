@@ -4,6 +4,7 @@ import React from 'react';
 import AboutPanel from './AboutPanel';
 import AchievementsPanel from './Achievements/AchievementsPanel';
 import ProfilePanel from './Profile/ProfilePanel';
+import SkillPanel from './Skill/SkillPanel';
 
 function a11yProps(index) {
   return {
@@ -64,7 +65,7 @@ const About = () => {
           <AchievementsPanel />
         </AboutPanel>
         <AboutPanel value={value} index={2}>
-          Item Three
+          <SkillPanel />
         </AboutPanel>
       </Box>
     </>
