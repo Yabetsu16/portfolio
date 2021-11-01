@@ -10,6 +10,7 @@ const ProfilePanel = () => {
       container
       justifyContent="space-around"
       alignItems="center"
+      sx={{ height: '100vh' }}
       spacing={3}
       direction="row"
     >
