@@ -6,6 +6,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import { styled } from '@mui/material/styles';
 import About from './components/About/About';
 import { grey, lightBlue } from '@mui/material/colors';
+import Projects from './components/Projects/Projects';
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
@@ -106,6 +107,7 @@ function App() {
             DrawerHeader={DrawerHeader}
           />
           <About />
+          <Projects />
         </Box>
       </ThemeProvider>
     </ColorModeContext.Provider>
