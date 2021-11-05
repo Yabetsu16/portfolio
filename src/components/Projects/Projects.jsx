@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <>
       <div
-        id="about"
+        id="projects"
         style={{
           padding: '60px',
           backgroundColor: theme.palette.mode === 'dark' ? 'black' : 'white'

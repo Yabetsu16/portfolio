@@ -96,6 +96,7 @@ const ProfilePanel = () => {
           </span>
         </Typography>
         <Typography paragraph>MAY 2015 - MAY 2019, Caloocan City</Typography>
+        {/* Button for desktop */}
         <Box
           sx={{
             display: { xs: 'none', sm: 'none', md: 'block' },
@@ -103,6 +104,7 @@ const ProfilePanel = () => {
           }}
         >
           <Button
+            href="#projects"
             variant="outlined"
             sx={{
               color: theme.palette.mode === 'dark' ? 'white' : 'primary'
@@ -196,9 +198,11 @@ const ProfilePanel = () => {
           </span>{' '}
         </Typography>
         <Typography paragraph>SEPT 2017 - FEB 2018, Quezon City</Typography>
+        {/* Button for mobile */}
         <Box sx={{ display: { sm: 'block', md: 'none' }, textAlign: 'center' }}>
           <Button
             variant="outlined"
+            href="#projects"
             sx={{
               color: theme.palette.mode === 'dark' ? 'white' : 'primary'
             }}

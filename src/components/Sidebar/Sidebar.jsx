@@ -5,7 +5,6 @@ import {
   ChevronLeft,
   ChevronRight,
   ContactMail,
-  Description,
   Home,
   Info,
   Web
@@ -39,11 +38,18 @@ const Sidebar = ({ open, handleDrawerClose, DrawerHeader }) => {
         </DrawerHeader>
         <Divider />
         <List>
-          <SidebarLink linkName="HOME" icon={<Home />} />
-          <SidebarLink linkName="ABOUT" icon={<Info />} />
-          <SidebarLink linkName="PROJECTS" icon={<Web />} />
-          <SidebarLink linkName="RESUME" icon={<Description />} />
-          <SidebarLink linkName="CONTACT" icon={<ContactMail />} />
+          <SidebarLink linkName="HOME" icon={<Home />} linkTo={'#'} />
+          <SidebarLink linkName="ABOUT" icon={<Info />} linkTo={'#about'} />
+          <SidebarLink
+            linkName="PROJECTS"
+            icon={<Web />}
+            linkTo={'#projects'}
+          />
+          <SidebarLink
+            linkName="CONTACT"
+            icon={<ContactMail />}
+            linkTo={'#contact'}
+          />
         </List>
       </Drawer>
     </>

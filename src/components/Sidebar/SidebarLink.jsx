@@ -1,13 +1,14 @@
-import { ListItem, ListItemIcon, ListItemText } from '@mui/material';
+// @ts-nocheck
+import { ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import React from 'react';
 
-const SidebarLink = ({ linkName, icon }) => {
+const SidebarLink = ({ linkName, linkTo, icon }) => {
   return (
     <>
-      <ListItem button key={linkName}>
+      <ListItemButton component="a" button key={linkName} href={linkTo}>
         <ListItemIcon>{icon}</ListItemIcon>
         <ListItemText primary={linkName} />
-      </ListItem>
+      </ListItemButton>
     </>
   );
 };
