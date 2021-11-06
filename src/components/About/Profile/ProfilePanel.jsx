@@ -112,6 +112,17 @@ const ProfilePanel = () => {
           >
             See Projects
           </Button>
+          <Button
+            variant="outlined"
+            href="https://docs.google.com/document/d/e/2PACX-1vQjur-wwvYVry6RxhMUjxQZWZ25a5z2IUVU5qvjrw3CE2OTPru04Skt7KEcSv0DzUnX3yr7YDAMQo3N/pub"
+            target="_blank"
+            sx={{
+              color: theme.palette.mode === 'dark' ? 'white' : 'primary',
+              marginLeft: 5
+            }}
+          >
+            See Resume
+          </Button>
         </Box>
       </Grid>
       {/* Experience list for desktop */}
@@ -212,8 +223,10 @@ const ProfilePanel = () => {
           <Button
             variant="outlined"
             href="https://docs.google.com/document/d/e/2PACX-1vQjur-wwvYVry6RxhMUjxQZWZ25a5z2IUVU5qvjrw3CE2OTPru04Skt7KEcSv0DzUnX3yr7YDAMQo3N/pub"
+            target="_blank"
             sx={{
-              color: theme.palette.mode === 'dark' ? 'white' : 'primary'
+              color: theme.palette.mode === 'dark' ? 'white' : 'primary',
+              marginLeft: 5
             }}
           >
             See Resume
