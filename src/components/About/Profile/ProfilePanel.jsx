@@ -209,6 +209,15 @@ const ProfilePanel = () => {
           >
             See Projects
           </Button>
+          <Button
+            variant="outlined"
+            href="https://docs.google.com/document/d/e/2PACX-1vQjur-wwvYVry6RxhMUjxQZWZ25a5z2IUVU5qvjrw3CE2OTPru04Skt7KEcSv0DzUnX3yr7YDAMQo3N/pub"
+            sx={{
+              color: theme.palette.mode === 'dark' ? 'white' : 'primary'
+            }}
+          >
+            See Resume
+          </Button>
         </Box>
       </Grid>
     </Grid>
