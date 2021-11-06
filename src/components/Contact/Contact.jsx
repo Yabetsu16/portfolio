@@ -1,5 +1,12 @@
 import { GitHub, LinkedIn, Send } from '@mui/icons-material';
-import { Box, Button, Grid, TextField, Typography } from '@mui/material';
+import {
+  Box,
+  Button,
+  Grid,
+  IconButton,
+  TextField,
+  Typography
+} from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
@@ -56,15 +63,27 @@ const Contact = () => {
           If you have questions just email me on the following.
         </Typography>
         <Box sx={{ textAlign: 'center' }} mt="20px">
-          <LinkedIn
-            fontSize="large"
-            color="primary"
-            sx={{ marginRight: '5px' }}
-          />
-          <GitHub
-            fontSize="large"
-            sx={{ color: theme.palette.mode === 'dark' ? 'white' : 'black' }}
-          />
+          <IconButton
+            aria-label="linkedInLink"
+            href="https://www.linkedin.com/in/jabez-joshua-bondoc-489016156/"
+            target="_blank"
+          >
+            <LinkedIn
+              fontSize="large"
+              color="primary"
+              sx={{ marginRight: '5px' }}
+            />
+          </IconButton>
+          <IconButton
+            aria-label="githubLink"
+            href="https://github.com/Yabetsu16"
+            target="_blank"
+          >
+            <GitHub
+              fontSize="large"
+              sx={{ color: theme.palette.mode === 'dark' ? 'white' : 'black' }}
+            />
+          </IconButton>
         </Box>
       </div>
       <form ref={formRef} onSubmit={handleSubmit}>
@@ -133,9 +152,12 @@ const Contact = () => {
           <Grid item md={12} lg={12} sx={{ textAlign: 'center' }} mb="40px">
             <Button
               type="submit"
-              variant="contained"
+              variant="outlined"
               endIcon={<Send />}
               size="large"
+              sx={{
+                color: theme.palette.mode === 'dark' ? 'white' : 'primary'
+              }}
             >
               Send
             </Button>
