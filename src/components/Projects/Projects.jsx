@@ -5,6 +5,7 @@ import ProjectItem from './ProjectItem';
 import voyageToTheDeep from './voyage_to_the_deep.jpg';
 import rrdnTruckingServices from './rrdntruckingservices.png';
 import portfolio from './portfolio.png';
+import cryptoverse from './cryptoverse.png';
 
 const Projects = () => {
   const theme = useTheme();
@@ -76,6 +77,17 @@ const Projects = () => {
               'I also used Material UI 5 as my UI framework.'
             }
             link={'#'}
+            buttonDescription={'Go to the Website'}
+          />
+          <ProjectItem
+            image={cryptoverse}
+            projectName={'Cryptoverse'}
+            description={
+              'Cryptoverse is a prototype project about crypto. ' +
+              'I used ReactJS as frontend framework and Ant Design for the UI.' +
+              'I used the free version of coinranking api for the content of the project.'
+            }
+            link={'https://cryptoverse-project.netlify.app/'}
             buttonDescription={'Go to the Website'}
           />
         </Grid>
