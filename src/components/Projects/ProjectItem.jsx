@@ -5,7 +5,9 @@ import {
   CardContent,
   Typography,
   CardActions,
-  Button
+  Button,
+  Chip,
+  Box
 } from '@mui/material';
 import React from 'react';
 
@@ -14,7 +16,8 @@ const ProjectItem = ({
   projectName,
   description,
   link,
-  buttonDescription
+  buttonDescription,
+  skills
 }) => {
   return (
     <Grid
@@ -41,6 +44,11 @@ const ProjectItem = ({
           <Typography variant="body2" color="text.secondary">
             {description}
           </Typography>
+          <Box sx={{ display: 'flex', justifyContent: 'center', mt: 3 }}>
+            {skills.map((skill) => (
+              <Chip label={skill} variant="outlined" sx={{ mr: 3 }} />
+            ))}
+          </Box>
         </CardContent>
         <CardActions sx={{ justifyContent: 'center' }}>
           <Button size="small" href={link} target="_blank">

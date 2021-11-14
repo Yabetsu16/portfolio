@@ -56,6 +56,7 @@ const Projects = () => {
               'https://play.google.com/store/apps/details?id=com.JJP.VoyagetotheDeep'
             }
             buttonDescription={'Go to Playstore'}
+            skills={['C#', 'Unity']}
           />
           <ProjectItem
             image={rrdnTruckingServices}
@@ -67,6 +68,7 @@ const Projects = () => {
             }
             link={'http://rrdntruckingservices.ph/'}
             buttonDescription={'Go to the Website'}
+            skills={['PHP', 'MDBootstrap 4', 'MySQL']}
           />
           <ProjectItem
             image={portfolio}
@@ -78,6 +80,7 @@ const Projects = () => {
             }
             link={'#'}
             buttonDescription={'Go to the Website'}
+            skills={['React JS', 'MUI 5']}
           />
           <ProjectItem
             image={cryptoverse}
@@ -85,10 +88,11 @@ const Projects = () => {
             description={
               'Cryptoverse is a prototype project about crypto. ' +
               'I used ReactJS as frontend framework and Ant Design for the UI.' +
-              'I used the free version of coinranking api for the content of the project.'
+              'I also used the free version of coinranking api for the content of the project.'
             }
             link={'https://cryptoverse-project.netlify.app/'}
             buttonDescription={'Go to the Website'}
+            skills={['React JS', 'AntDesign', 'Axios']}
           />
         </Grid>
       </Box>
