@@ -13,13 +13,6 @@ const SkillPanel = () => {
     >
       <SkillItem
         image={
-          'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png'
-        }
-        skillName={'React'}
-        rating={4}
-      />
-      <SkillItem
-        image={
           'https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-html-markup-develop-layout-language-256.png'
         }
         skillName={'HTML'}
@@ -37,13 +30,20 @@ const SkillPanel = () => {
           'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/187_Js_logo_logos-256.png'
         }
         skillName={'JS'}
-        rating={3.5}
+        rating={4}
       />
       <SkillItem
         image={
           'https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-php-software-develop-command-language-256.png'
         }
         skillName={'PHP'}
+        rating={4}
+      />
+      <SkillItem
+        image={
+          'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png'
+        }
+        skillName={'React'}
         rating={3.5}
       />
       <SkillItem
@@ -59,18 +59,6 @@ const SkillPanel = () => {
         rating={3.0}
       />
       <SkillItem
-        image={'https://i.redd.it/tu3gt6ysfxq71.png'}
-        skillName={'Unity'}
-        rating={3.0}
-      />
-      <SkillItem
-        image={
-          'https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png'
-        }
-        skillName={'C#'}
-        rating={3.0}
-      />
-      <SkillItem
         image={
           'https://seeklogo.com/images/N/npm-logo-01B8642EDD-seeklogo.com.png'
         }
@@ -81,6 +69,13 @@ const SkillPanel = () => {
         image={'https://iconape.com/wp-content/png_logo_vector/yarn-logo.png'}
         skillName={'Yarn'}
         rating={2.5}
+      />
+      <SkillItem
+        image={
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png'
+        }
+        skillName={'Laravel'}
+        rating={0.5}
       />
       <SkillItem
         image={
@@ -109,6 +104,18 @@ const SkillPanel = () => {
         }
         skillName={'MongoDB'}
         rating={0.5}
+      />
+      <SkillItem
+        image={'https://i.redd.it/tu3gt6ysfxq71.png'}
+        skillName={'Unity'}
+        rating={3.0}
+      />
+      <SkillItem
+        image={
+          'https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png'
+        }
+        skillName={'C#'}
+        rating={3.0}
       />
     </Grid>
   );
