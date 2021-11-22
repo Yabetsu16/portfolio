@@ -43,6 +43,7 @@ const Projects = () => {
         >
           {projects.map((project, index) => (
             <ProjectItem
+              key={index}
               image={project.image}
               name={project.name}
               description={project.description}

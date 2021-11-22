@@ -14,7 +14,6 @@ import { useTheme } from '@mui/material/styles';
 
 const AchievementItem = ({
   label,
-  letter,
   title,
   subheader,
   image,
@@ -43,7 +42,7 @@ const AchievementItem = ({
               }}
               aria-label={label}
             >
-              {letter}
+              {label.charAt(0)}
             </Avatar>
           }
           title={title}
