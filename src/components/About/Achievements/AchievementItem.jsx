@@ -45,7 +45,7 @@ const AchievementItem = ({
               {label.charAt(0)}
             </Avatar>
           }
-          title={title}
+          title={label + ': ' + title}
           subheader={subheader}
         />
         <CardMedia component="img" height="auto" image={image} alt={title} />

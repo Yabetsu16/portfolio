@@ -55,7 +55,7 @@ export const projects = [
     name: 'GPT3',
     description:
       'GPT3 is my design prototype project ' +
-      'I used ReactJS as frontend framework and CSS for styling' +
+      'I used ReactJS as frontend framework and CSS for styling. ' +
       'I also learned and used BEM naming convention standard when naming my class selectors',
     link: 'https://yabetsu16.github.io/gpt-prototype/',
     buttonDescription: 'Go to the Website',
