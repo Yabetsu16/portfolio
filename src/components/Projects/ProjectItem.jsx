@@ -13,7 +13,7 @@ import React from 'react';
 
 const ProjectItem = ({
   image,
-  projectName,
+  name,
   description,
   link,
   buttonDescription,
@@ -31,15 +31,10 @@ const ProjectItem = ({
       alignItems="center"
     >
       <Card sx={{ maxWidth: 550 }}>
-        <CardMedia
-          component="img"
-          height="auto"
-          image={image}
-          alt={projectName}
-        />
+        <CardMedia component="img" height="auto" image={image} alt={name} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div" align="center">
-            {projectName}
+            {name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
             {description}
