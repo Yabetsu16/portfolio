@@ -3,6 +3,8 @@ import { styled } from '@mui/material/styles';
 import { Grid, IconButton, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { KeyboardArrowDown } from '@mui/icons-material';
+import ParticleContainer from '../ParticleContainer/ParticleContainer';
+
 const drawerWidth = 240;
 
 const Home = ({ open, DrawerHeader, mode }) => {
@@ -35,7 +37,9 @@ const Home = ({ open, DrawerHeader, mode }) => {
           bgcolor: theme.palette.mode === 'dark' ? 'black' : 'white'
         }}
       >
+        <ParticleContainer theme={theme} />
         <DrawerHeader />
+
         <Grid
           container
           direction="row"
