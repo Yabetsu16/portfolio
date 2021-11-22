@@ -22,7 +22,7 @@ const labels = {
   5: 'Excellent+'
 };
 
-const SkillItem = ({ image, skillName, rating }) => {
+const SkillItem = ({ image, name, rating }) => {
   return (
     <Grid item>
       <Card sx={{ display: 'flex' }}>
@@ -30,12 +30,12 @@ const SkillItem = ({ image, skillName, rating }) => {
           component="img"
           sx={{ width: 150, height: 'auto' }}
           image={image}
-          alt={skillName}
+          alt={name}
         />
         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
           <CardContent sx={{ flex: '1 1 auto' }}>
             <Typography component="div" variant="h5">
-              {skillName}
+              {name}
             </Typography>
             <Rating
               name="half-rating-read"
