@@ -1,5 +1,5 @@
 import { Brightness4, Brightness7, Menu } from '@mui/icons-material';
-import { IconButton, Toolbar, Typography } from '@mui/material';
+import { Box, IconButton, Toolbar, Typography } from '@mui/material';
 import MuiAppBar from '@mui/material/AppBar';
 import React from 'react';
 import { styled, useTheme } from '@mui/material/styles';
@@ -41,9 +41,18 @@ const Navbar = ({ open, handleDrawerOpen, ColorModeContext }) => {
             height="64px"
             width="64px"
           />
-          <Typography variant="h4" noWrap sx={{ flexGrow: 1 }} component="div">
+          <Typography
+            variant="h4"
+            noWrap
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            component="div"
+          >
             Yabetsu
           </Typography>
+          <Box
+            component="span"
+            sx={{ display: { xs: 'block', sm: 'none' }, flexGrow: 1 }}
+          ></Box>
           <IconButton
             sx={{ ml: 1 }}
             onClick={colorMode.toggleColorMode}
