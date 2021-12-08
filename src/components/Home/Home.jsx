@@ -90,7 +90,7 @@ const Home = ({ open, DrawerHeader, mode }) => {
             <Typography
               variant="h1"
               sx={{ display: { xs: 'block', sm: 'none' }, fontWeight: '500' }}
-              color="#1CC5FF"
+              color={theme.palette.mode === 'dark' ? '#03a9f4' : '#0d47a1'}
             >
               Web Developer
             </Typography>
