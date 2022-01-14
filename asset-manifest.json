@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.9d054825.chunk.css",
-    "main.js": "/portfolio/static/js/main.ea940c13.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.ea940c13.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.9f34e739.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.9f34e739.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.6064d74d.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.6064d74d.js.map",
     "static/js/2.3b4eecad.chunk.js": "/portfolio/static/js/2.3b4eecad.chunk.js",
@@ -19,6 +19,7 @@
     "static/media/profile.b9a32b0e.jpg": "/portfolio/static/media/profile.b9a32b0e.jpg",
     "static/media/rrdntruckingservices.49a8c6f1.png": "/portfolio/static/media/rrdntruckingservices.49a8c6f1.png",
     "static/media/ual-certificate.3fa9e89a.png": "/portfolio/static/media/ual-certificate.3fa9e89a.png",
+    "static/media/udemy-certificate.8e50b52f.jpg": "/portfolio/static/media/udemy-certificate.8e50b52f.jpg",
     "static/media/unity-essentials-pathway.4a7ee5a3.png": "/portfolio/static/media/unity-essentials-pathway.4a7ee5a3.png",
     "static/media/voyage_to_the_deep.53e44747.jpg": "/portfolio/static/media/voyage_to_the_deep.53e44747.jpg"
   },
@@ -26,6 +27,6 @@
     "static/js/runtime-main.6064d74d.js",
     "static/js/2.3b4eecad.chunk.js",
     "static/css/main.9d054825.chunk.css",
-    "static/js/main.ea940c13.chunk.js"
+    "static/js/main.9f34e739.chunk.js"
   ]
 }
