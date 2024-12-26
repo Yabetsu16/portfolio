@@ -58,12 +58,13 @@ const ProfilePanel = () => {
         </Typography>
         {/* Objective */}
         <Typography paragraph mt={2}>
-          I am a passionate IT Professional with a Bachelor's degree in
-          Information Technology with a major in Web Development, looking for a
-          company where I can design excellent web applications and enhance my
-          skill set. I'm familiar with HTML, CSS, JavaScript, PHP, MySQL,
-          Bootstrap UI, and the fundamentals of Vue and React. and I also have
-          game development experience using Unity3D and C#.
+        Highly skilled Application Systems Engineer with 2 years of experience in designing, developing, and implementing 
+        software systems. I deliver high-quality solutions on time, 
+        with a focus on scalability, reliability, and maintainability. 
+        I am skilled in debugging and troubleshooting code to ensure optimal performance and functionality. 
+        I have used multiple programming languages and frameworks, including ASP.NET, VB.NET, PHP, and SQL. 
+        I am constantly evolving my skills and staying up-to-date with emerging technologies to drive 
+        continuous improvement and innovation.
         </Typography>
         {/* Education */}
         <Typography
@@ -144,7 +145,7 @@ const ProfilePanel = () => {
           </span>{' '}
         </Typography>
         <Typography paragraph>JUNE 2020 - PRESENT, Malabon City</Typography>
-        <Typography paragraph mt={2}>
+        {/* <Typography paragraph mt={2}>
           <span
             style={{
               // @ts-ignore
@@ -154,7 +155,7 @@ const ProfilePanel = () => {
             Church in Malabon / Web Developer
           </span>{' '}
         </Typography>
-        <Typography paragraph>AUGUST 2019 - MAR 2020, Malabon City</Typography>
+        <Typography paragraph>AUGUST 2019 - MAR 2020, Malabon City</Typography> */}
         <Typography paragraph mt={2}>
           <span
             style={{
@@ -187,7 +188,7 @@ const ProfilePanel = () => {
           </span>{' '}
         </Typography>
         <Typography paragraph>JUNE 2020 - PRESENT, Malabon City</Typography>
-        <Typography paragraph>
+        {/* <Typography paragraph>
           <span
             style={{
               // @ts-ignore
@@ -197,7 +198,7 @@ const ProfilePanel = () => {
             Church in Malabon / Web Developer
           </span>{' '}
         </Typography>
-        <Typography paragraph>AUGUST 2019 - MAR 2020, Malabon City</Typography>
+        <Typography paragraph>AUGUST 2019 - MAR 2020, Malabon City</Typography> */}
         <Typography paragraph>
           <span
             style={{
