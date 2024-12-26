@@ -8,7 +8,6 @@ const ParticleContainer = ({ theme }) => {
     <>
       <Particles
         id="tsparticles"
-        canvasClassName="particleCanvas"
         options={{
           fpsLimit: 60,
           interactivity: {
