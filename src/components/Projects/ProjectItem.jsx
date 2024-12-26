@@ -16,6 +16,7 @@ const ProjectItem = ({
   name,
   description,
   link,
+  color,
   buttonDescription,
   skills
 }) => {
@@ -46,7 +47,7 @@ const ProjectItem = ({
           </Box>
         </CardContent>
         <CardActions sx={{ justifyContent: 'center' }}>
-          <Button size="small" href={link} target="_blank">
+          <Button size="small" href={link} color={color} target="_blank">
             {buttonDescription}
           </Button>
         </CardActions>

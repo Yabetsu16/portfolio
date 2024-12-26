@@ -14,6 +14,7 @@ export const projects = [
       'We are a three member group and my role is ' +
       'gameplay programmer and my two other groupmates are for 2D and 3D art',
     link: 'https://play.google.com/store/apps/details?id=com.JJP.VoyagetotheDeep',
+    color: 'primary',
     buttonDescription: 'Go to Playstore',
     skills: ['C#', 'Unity']
   },
@@ -25,7 +26,8 @@ export const projects = [
       'This project is my first project as a freelance web developer. ' +
       'I used PHP for backend, MySQL for database and Bootstrap 4 for the UI.',
     link: 'http://rrdntruckingservices.ph/',
-    buttonDescription: 'Go to the Website',
+    color: 'error',
+    buttonDescription: 'Website Down',
     skills: ['PHP', 'MDBootstrap 4', 'MySQL']
   },
   {
@@ -36,6 +38,7 @@ export const projects = [
       'This project is my first project using ReactJS as frontend framework. ' +
       'I also used Material UI 5 as my UI framework.',
     link: '#',
+    color: 'primary',
     buttonDescription: 'Go to the Website',
     skills: ['React JS', 'MUI 5']
   },
@@ -47,6 +50,7 @@ export const projects = [
       'I used ReactJS as frontend framework and Ant Design for the UI.' +
       'I also used the free version of coinranking api for the content of the project.',
     link: 'https://cryptoverse-project.netlify.app/',
+    color: 'primary',
     buttonDescription: 'Go to the Website',
     skills: ['React JS', 'AntDesign', 'Axios']
   },
@@ -58,6 +62,7 @@ export const projects = [
       'I used ReactJS as frontend framework and CSS for styling. ' +
       'I also learned and used BEM naming convention standard when naming my class selectors',
     link: 'https://yabetsu16.github.io/gpt-prototype/',
+    color: 'primary',
     buttonDescription: 'Go to the Website',
     skills: ['React JS', 'CSS']
   }
