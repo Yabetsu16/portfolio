@@ -1,32 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9d054825.chunk.css",
-    "main.js": "/portfolio/static/js/main.9f34e739.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.9f34e739.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.6064d74d.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.6064d74d.js.map",
-    "static/js/2.3b4eecad.chunk.js": "/portfolio/static/js/2.3b4eecad.chunk.js",
-    "static/js/2.3b4eecad.chunk.js.map": "/portfolio/static/js/2.3b4eecad.chunk.js.map",
-    "static/js/3.2ef13a8b.chunk.js": "/portfolio/static/js/3.2ef13a8b.chunk.js",
-    "static/js/3.2ef13a8b.chunk.js.map": "/portfolio/static/js/3.2ef13a8b.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.6c5291a0.css",
+    "main.js": "/portfolio/static/js/main.99d8bcaa.js",
+    "static/js/453.45849238.chunk.js": "/portfolio/static/js/453.45849238.chunk.js",
+    "static/media/ama_dean.jpg": "/portfolio/static/media/ama_dean.768f2f5b11192433ffdd.jpg",
+    "static/media/rrdntruckingservices.png": "/portfolio/static/media/rrdntruckingservices.49a8c6f18f664378970c.png",
+    "static/media/gpt.png": "/portfolio/static/media/gpt.2738afc2263a9416ccd2.png",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.b9a32b0e3b2b7bec4683.jpg",
+    "static/media/udemy-certificate.jpg": "/portfolio/static/media/udemy-certificate.8e50b52f13d28c20160b.jpg",
+    "static/media/voyage_to_the_deep.jpg": "/portfolio/static/media/voyage_to_the_deep.53e44747d9d0c8934da7.jpg",
+    "static/media/cryptoverse.png": "/portfolio/static/media/cryptoverse.d24997252037f95a8858.png",
+    "static/media/unity-essentials-pathway.png": "/portfolio/static/media/unity-essentials-pathway.4a7ee5a3b7c2d62b1012.png",
+    "static/media/ual-certificate.png": "/portfolio/static/media/ual-certificate.3fa9e89a1ed172b8b1d5.png",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.9c1a0c4f3a5d1a680d76.png",
     "index.html": "/portfolio/index.html",
-    "static/css/main.9d054825.chunk.css.map": "/portfolio/static/css/main.9d054825.chunk.css.map",
-    "static/js/2.3b4eecad.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3b4eecad.chunk.js.LICENSE.txt",
-    "static/media/ama_dean.768f2f5b.jpg": "/portfolio/static/media/ama_dean.768f2f5b.jpg",
-    "static/media/cryptoverse.d2499725.png": "/portfolio/static/media/cryptoverse.d2499725.png",
-    "static/media/gpt.2738afc2.png": "/portfolio/static/media/gpt.2738afc2.png",
-    "static/media/portfolio.9c1a0c4f.png": "/portfolio/static/media/portfolio.9c1a0c4f.png",
-    "static/media/profile.b9a32b0e.jpg": "/portfolio/static/media/profile.b9a32b0e.jpg",
-    "static/media/rrdntruckingservices.49a8c6f1.png": "/portfolio/static/media/rrdntruckingservices.49a8c6f1.png",
-    "static/media/ual-certificate.3fa9e89a.png": "/portfolio/static/media/ual-certificate.3fa9e89a.png",
-    "static/media/udemy-certificate.8e50b52f.jpg": "/portfolio/static/media/udemy-certificate.8e50b52f.jpg",
-    "static/media/unity-essentials-pathway.4a7ee5a3.png": "/portfolio/static/media/unity-essentials-pathway.4a7ee5a3.png",
-    "static/media/voyage_to_the_deep.53e44747.jpg": "/portfolio/static/media/voyage_to_the_deep.53e44747.jpg"
+    "main.6c5291a0.css.map": "/portfolio/static/css/main.6c5291a0.css.map",
+    "main.99d8bcaa.js.map": "/portfolio/static/js/main.99d8bcaa.js.map",
+    "453.45849238.chunk.js.map": "/portfolio/static/js/453.45849238.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.6064d74d.js",
-    "static/js/2.3b4eecad.chunk.js",
-    "static/css/main.9d054825.chunk.css",
-    "static/js/main.9f34e739.chunk.js"
+    "static/css/main.6c5291a0.css",
+    "static/js/main.99d8bcaa.js"
   ]
 }
