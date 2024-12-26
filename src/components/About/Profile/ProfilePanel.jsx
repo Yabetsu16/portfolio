@@ -141,10 +141,32 @@ const ProfilePanel = () => {
               fontWeight: '700'
             }}
           >
+            Fujitsu / Application Systems Engineer
+          </span>{' '}
+        </Typography>
+        <Typography paragraph>JAN 2022 - PRESENT, Taguig City</Typography>
+        <Typography paragraph mt={2}>
+          <span
+            style={{
+              // @ts-ignore
+              fontWeight: '700'
+            }}
+          >
+            Fujitsu / Application Systems Engineer/Trainee
+          </span>{' '}
+        </Typography>
+        <Typography paragraph>JAN 2022 - DEC 2023, Taguig City</Typography>
+        <Typography paragraph mt={2}>
+          <span
+            style={{
+              // @ts-ignore
+              fontWeight: '700'
+            }}
+          >
             Freelance Web Developer
           </span>{' '}
         </Typography>
-        <Typography paragraph>JUNE 2020 - PRESENT, Malabon City</Typography>
+        <Typography paragraph>JUNE 2020 - DEC 2021, Malabon City</Typography>
         {/* <Typography paragraph mt={2}>
           <span
             style={{
